@@ -1,0 +1,12 @@
+html { max-width: 41em }
+head { margin: 8px }
+head, title { display: block }
+
+style, script { display: block; font-family: monospace; white-space: pre-wrap; padding-left: 10px }
+style { border-left: 10px solid #98A6C0 }
+script { border-left: 10px solid #D6F034 }
+script[src]::before { content: 'url(' attr(src) ')' }
+
+* { white-space: pre-wrap }
+title::before { content: 'title: ' }
+:empty::after { content: '¶' }

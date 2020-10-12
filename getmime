@@ -1,0 +1,8 @@
+#!/bin/sh
+getfattr -n user.mime_type --only-values $1
+
+##!/usr/bin/ruby
+#require 'bundler/setup'
+#require 'ffi-xattr'
+#path = ARGV[0]
+#puts Xattr::Lib.get(path, false, 'user.mime_type')

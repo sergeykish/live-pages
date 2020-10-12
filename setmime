@@ -1,0 +1,16 @@
+#!/bin/sh
+setfattr -n user.mime_type -v $1 $2
+
+##!/usr/bin/ruby
+#require 'bundler/setup'
+#require 'ffi-xattr'
+#path = ARGV[0]
+#mime = ARGV[1]
+##mime = 'image/svg+xml'
+##mime = 'image/png'
+##mime = 'application/xml'
+##mime = 'application/xhtml+xml'
+##mime = 'application/javascript'
+##mime = 'text/css'
+##mime = 'text/html'
+#Xattr::Lib.set(path, false, 'user.mime_type', mime)

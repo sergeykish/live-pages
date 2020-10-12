@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="en"><head><title>Live pages README.html</title><link rel="stylesheet" href="live.css"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body><h1>Live pages</h1><p>Installation</p><pre>$ git clone https://github.com/sergeykish/live-pages.git
+$ sudo pacman -S ruby
+$ cd live-pages
+$ bundle install
+$ bundle exec rackup</pre><p>Open <a href="http://localhost:9292/">http://localhost:9292/</a>.</p><p>I store <code>Content Type</code> in <code>xattr</code>, it is not preserved in git repo so it should be reset</p><pre>$ sudo pacman -S attr
+$ ./setmime text/css live.css</pre></body></html>
